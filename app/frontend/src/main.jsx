@@ -1,7 +1,6 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client';
-import './Style.css';
-// import App from './App';
+import './style.css';
 import { InitialScreen } from './InitialScreen';
 
 const container = document.getElementById('root')
