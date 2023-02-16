@@ -5,7 +5,10 @@ import { GetSizeOfDisk } from "../wailsjs/go/main/App";
 
 export const SizeScreen = ({ setPage }) => {
     const [data, setData] = useState([0, 0]);
-    const updateResultText = (newValue) => setData(newValue);
+    const updateResultText = (newValue) => {
+        const occupated = Number(newValue[1]) - Number(newValue[0]);
+        setData([newValue[0], occupated]);
+    };
 
     useEffect(() => {
         setInterval(() => {
