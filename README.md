@@ -12,6 +12,8 @@ export PATH="${GOROOT}/bin:${PATH}"
 o
 export PATH=${GOROOT}/bin:$PATH
 Luego de descargar wails ejecutar wails doctor, este verificará que dependendias faltan e indicará la forma de instalarlas
+instalar las dependencias que necesita go
+go get github.com/shirou/gopsutil/cpu
 
 Si desean usar el modo de desarrollo es necesario tener git
 Instalación de git en ubuntu:
