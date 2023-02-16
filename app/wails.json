@@ -2,12 +2,12 @@
   "$schema": "https://wails.io/schemas/config.v2.json",
   "name": "app",
   "outputfilename": "app",
-  "frontend:install": "npm install",
+  "frontend:install": "npm install --force",
   "frontend:build": "npm run build",
   "frontend:dev:watcher": "npm run dev",
   "frontend:dev:serverUrl": "auto",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Zea",
+    "email": "jdzeaherrera@gmail.com"
   }
 }
