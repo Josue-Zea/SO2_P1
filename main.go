@@ -4,7 +4,7 @@ import (
     "github.com/shirou/gopsutil/cpu"
 )
 
-func getPercent() int {
+func getPercent() float64 {
     percent, err := cpu.Percent(0, false)
     if err != nil {
         fmt.Printf("Error al leer el porcentaje de uso de la CPU: %v\n", err)
