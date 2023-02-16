@@ -22,7 +22,6 @@ const options = {
     }
 }
 export const Graphic = ({ dataCpu }) => {
-    console.log(dataCpu);
     return (
         <div className='BackgoundGraphic'>
             <Line

@@ -1,11 +1,21 @@
 import React from 'react';
+import { GetSizeOfDisk } from '../components/SizeComponent';
 
-export const SizeScreen = ({setPage}) => {
+export const SizeScreen = ({ setPage }) => {
+    const [data, setData] = useState([0, 0]);
+    const updateResultText = (newValue) => setData(newValue);
+
+    useEffect(() => {
+        setInterval(() => {
+            GetSizeOfDisk().then(updateResultText);
+        }, 2000);
+    }, []);
+
     return (
         <>
-           <h1>Size</h1>
-           <div>
-                <button onClick={() => setPage(0) }>Regresar</button>
+            <SizeGrapic dataSize={data}/>
+            <div className='DivPosition'>
+                <button className='ButtonBack' onClick={() => setPage(0)}>Regresar</button>
             </div>
         </>
     )

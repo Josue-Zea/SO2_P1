@@ -63,3 +63,9 @@ body {
 .BackgoundGraphic {
     background-color: white;
 }
+
+.SizeGraph {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
