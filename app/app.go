@@ -39,7 +39,7 @@ func (a *App) GetPercentCpu() float64 {
 	}
 }
 
-func (a *App) GetSizeOfDisk() [2]uint64 {
+func (a *App) GetSizeOfDisk() ([2]uint64) {
 	var stat syscall.Statfs_t
     var values[2] uint64
 
