@@ -1,18 +1,17 @@
 package main
+
 import (
-    "fmt"
-    "github.com/shirou/gopsutil/cpu"
+	"fmt"
+	"time"
+
+	"github.com/shirou/gopsutil/cpu"
 )
 
-func getPercent() float64 {
-    percent, err := cpu.Percent(1, false)
-    if err != nil {
-        fmt.Printf("Error al leer el porcentaje de uso de la CPU: %v\n", err)
-        return -1
-    }
-
-    return percent[0]
-}
 func main() {
-    fmt.Println(getPercent())
+	percent, err := cpu.Percent(time.Second, false)
+	if err != nil {
+		fmt.Printf("Error")
+	} else {
+		fmt.Printf("%.2f%%\n", percent[0])
+	}
 }
