@@ -3,6 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
+	"time"
+
+	"github.com/shirou/gopsutil/cpu"
 )
 
 // App struct
@@ -24,4 +27,13 @@ func (a *App) startup(ctx context.Context) {
 // Greet returns a greeting for the given name
 func (a *App) Greet(name string) string {
 	return fmt.Sprintf("Hello %s, It's show time!", name)
+}
+
+func (a *App) GetPercentCpu() float64 {
+	percent, err := cpu.Percent(time.Second, false)
+	if err != nil {
+		return -1
+	} else {
+		return percent[0]
+	}
 }
