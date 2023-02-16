@@ -16,7 +16,7 @@ export const CpuScreen = ({setPage}) => {
 
     const deleteFirst = () => {
         // data.shift();
-        setData([...data.shift()]);
+        setData([]);
     };
 
     return (
