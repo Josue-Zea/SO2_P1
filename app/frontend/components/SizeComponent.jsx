@@ -33,12 +33,14 @@ export const SizeGrapic = ({ dataSize }) => {
                         },
                     ],
                 }}
-                options={{ 
-                    legend: {
-                        labels: {
-                            color: "black",
-                            font: {
-                                size: 18
+                options={{
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: "black",
+                                font: {
+                                    size: 18
+                                }
                             }
                         }
                     }
