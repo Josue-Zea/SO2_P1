@@ -1,5 +1,5 @@
 import React from 'react';
-import { GetSizeOfDisk } from '../components/SizeComponent';
+import { GetSizeOfDisk } from "../wailsjs/go/main/App";
 
 export const SizeScreen = ({ setPage }) => {
     const [data, setData] = useState([0, 0]);
