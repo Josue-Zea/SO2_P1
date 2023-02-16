@@ -36,8 +36,10 @@ export const SizeGrapic = ({ dataSize }) => {
                 options={{ 
                     legend: {
                         labels: {
-                            fontColor: "black",
-                            fontSize: 18
+                            color: "black",
+                            font: {
+                                size: 18
+                            }
                         }
                     }
                 }}
