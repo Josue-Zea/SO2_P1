@@ -20,8 +20,8 @@ export const CpuScreen = ({setPage}) => {
     return (
         <>
            <Graphic dataCpu={data}/>
-           <div>
-                <button onClick={() => setPage(0) }>Regresar</button>
+           <div className='DivPosition'>
+                <button className='ButtonBack' onClick={() => setPage(0) }>Regresar</button>
             </div>
         </>
     )

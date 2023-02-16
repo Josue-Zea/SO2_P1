@@ -1,6 +1,6 @@
-body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(182,109,24,1) 59%, rgba(0,212,255,1) 100%);
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(182, 109, 24, 1) 59%, rgba(0, 212, 255, 1) 100%);
 }
 
 .Card {
@@ -8,27 +8,58 @@ body{
     max-width: 540px;
 }
 
-.CardTexts{
+.CardTexts {
     margin-left: 15px;
 }
 
-.ImageClass{
+.ImageClass {
     max-width: 190px;
     max-height: 190px;
 }
 
-.ButtonsHome{
+.ButtonsHome {
     display: flex;
     justify-content: center;
     max-height: 100%;
     align-items: center;
 }
 
-.ButtonHome{
+.ButtonHome {
     width: 200px;
     margin: 25px;
 }
 
-.BackgoundGraphic{
+.DivPosition{
+    display: flex;
+    justify-content: center;
+}
+
+.ButtonBack {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.ButtonBack:hover {
+    background-color: #3e8e41
+}
+
+.ButtonBack:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.BackgoundGraphic {
     background-color: white;
 }
