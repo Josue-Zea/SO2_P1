@@ -2,7 +2,10 @@ module changeme
 
 go 1.18
 
-require github.com/wailsapp/wails/v2 v2.3.1
+require (
+	github.com/shirou/gopsutil v3.21.11+incompatible
+	github.com/wailsapp/wails/v2 v2.3.1
+)
 
 require (
 	github.com/bep/debounce v1.2.1 // indirect
@@ -20,7 +23,6 @@ require (
 	github.com/pkg/browser v0.0.0-20210706143420-7d21f8c997e2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/samber/lo v1.27.1 // indirect
-	github.com/shirou/gopsutil v3.21.11+incompatible // indirect
 	github.com/tklauser/go-sysconf v0.3.11 // indirect
 	github.com/tklauser/numcpus v0.6.0 // indirect
 	github.com/tkrajina/go-reflector v0.5.5 // indirect
