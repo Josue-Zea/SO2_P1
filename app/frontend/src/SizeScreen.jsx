@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
+import { SizeGrapic } from '../components/SizeComponent';
 import { GetSizeOfDisk } from "../wailsjs/go/main/App";
 
 export const SizeScreen = ({ setPage }) => {
