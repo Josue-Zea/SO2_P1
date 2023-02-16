@@ -8,10 +8,9 @@ export const CpuScreen = ({setPage}) => {
     
     useEffect(() => {
         setInterval(() => {
-            const newValue = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
             GetPercentCpu().then(updateResultText);
             // setData(prevData => [...prevData, newValue]);
-            if([...data, newValue].length > 30 ) deleteFirst();
+            if(data.length > 28 ) deleteFirst();
         }, 2000);
     }, []);
 
