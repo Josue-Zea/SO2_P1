@@ -17,7 +17,7 @@ export const SizeScreen = ({ setPage }) => {
     }, []);
 
     return (
-        <div style={{margin: '20px'}}>
+        <div style={{padding: '20px'}}>
             <SizeGrapic dataSize={data}/>
             <div className='DivPosition'>
                 <button className='ButtonBack' onClick={() => setPage(0)}>Regresar</button>
