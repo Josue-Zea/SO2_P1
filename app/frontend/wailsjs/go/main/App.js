@@ -6,6 +6,10 @@ export function GetPercentCpu() {
   return window['go']['main']['App']['GetPercentCpu']();
 }
 
+export function GetSizeOfDisk() {
+  return window['go']['main']['App']['GetSizeOfDisk']();
+}
+
 export function Greet(arg1) {
   return window['go']['main']['App']['Greet'](arg1);
 }
